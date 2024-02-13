@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutlogin</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: animate 16s ease-in-out infinite;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        @keyframes animate {
+
+            0%,
+            100% {
+                background-image: url(login1.jpg);
+            }
+
+            25% {
+                background-image: url(login2.jpg);
+            }
+
+            50% {
+                background-image: url(login3.jpg);
+            }
+        }
+
+        .outer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+
+        .logo {
+            background-repeat: no-repeat;
+            margin-left: 50px;
+            display: inline-block;
+        }
+
+        .logo img {
+            width: 170px;
+            filter: invert(100%);
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center !important;
+            height: 55vh;
+        }
+
+        .form {
+            width: 406px;
+            height: 500px;
+            background-color: rgb(77 74 74 / 71%);
+            box-shadow: 0 5px 30px black;
+        }
+
+
+        .btn {
+            text-align: center;
+            padding: 3px;
+            margin: 30px 0px 40px 30px;
+            border-style: none;
+            background-color: transparent;
+            color: beige;
+            font-size: 18px;
+            font-weight: 550;
+        }
+         .formGroup {
+            display: flex;
+            justify-content: center;
+        }
+
+        .formGroup input {
+            border: none;
+            width: 80%;
+            border-bottom: 2px solid white;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: transparent;
+            color: white;
+        }
+
+        input:focus {
+            outline: none !important;
+            border-bottom: 2px solid rgb(243, 91, 91);
+            font-size: 17px;
+            font-weight: bold;
+            color: white;
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        .checkBox {
+            display: flex;
+            justify-content: center;
+            margin: 16px !important;
+        }
+
+        #checkbox {
+            margin-right: 10px;
+            height: 15px;
+            width: 15px;
+        }
+
+        .text {
+            color: rgb(199, 197, 197);
+            font-size: 13px;
+        }
+
+        .btn2 {
+            padding: 10px;
+            width: 150px;
+            border-radius: 20px;
+            background-color: #d21414d1;
+            border-style: none;
+            color: white;
+            font-weight: 600;
+        }
+
+        .btn2:hover {
+            background-color: #df5c5c;
+        }
+
+        .btn button:hover {
+            border-bottom: 2px solid rgb(224, 37, 37);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="outer">
+            <div class="logo">
+                <img src="—Pngtree—badges sport fitness athletic gym_7784036.png">
+            </div>
+            <div class="content">
+                <div class="form">
+                    <div class="btn">
+                        <i class='fa fa-user-circle-o' style="font-size: 36px"></i><br>
+                        <h3>LOG-IN</h3>
+
+                    </div>
+                    <form class="signUp" action="" method="get">
+                        <div class="formGroup">
+                            <input type="text" id="userName" placeholder="User Name" autocomplete="off">
+                        </div>
+                        <div class="formGroup">
+                            <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+                        </div>
+                        <div class="formGroup">
+                            <input type="password" id="password" placeholder="Password" required autocomplete="off">
+                        </div>
+                        <div class="formGroup">
+                            <input type="password" id="confirmPassword" placeholder="Confirm Password" required
+                                autocomplete="off">
+                        </div>
+                        <div class="checkBox">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <span class="text">I agree with term & conditions</span>
+                        </div>
+                        <div class="formGroup">
+                            <button type="button" class="btn2">CONTINUE</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-color: black; */
+            color: white;
+        }
+
+        .logo {
+            background-repeat: no-repeat;
+            margin-left: 50px;
+            display: inline-block;
+        }
+
+        .logo img {
+            width: 170px;
+            filter: invert(100%);
+        }
+
+        .heading {
+            color: antiquewhite;
+            font-family: 'Anton', sans-serif;
+            font-size: 30px;
+            margin-left: 100px;
+        }
+
+        .container {
+            /* margin-top: 60px; */
+            background-color: black;
+            height: 650px; 
+
+
+        }
+
+        .left {
+            margin-left: 100px;
+            right: 10px;
+
+
+        }
+
+        .left h2 {
+            font-size: 30px;
+        }
+
+        .left ul {
+            padding: 10px;
+        }
+
+        .right {
+            /* display: flex; */
+            flex-wrap: wrap;
+            /* justify-content: right; */
+            margin-left: 100px;
+            height: 100px;
+            margin-top: 40px;
+
+        }
+
+        .right ul {
+            display: block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: none;
+            /* background-color: #ffe6e6; */
+            border-radius: 30px;
+            /* color: grey; */
+            color: #d45c5c;
+
+        }
+
+        .mid {
+            display: block;
+            width: 780px;
+            margin: 120px auto;
+            margin-top: -119px;
+            font-family: arial;
+        }
+
+        /* div.a {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid red;
+        }
+
+        div.b {
+            position: absolute;
+            right: 0;
+            width: 100px;
+            height: 120px;
+            border: 3px solid blue;
+        }
+
+        div.c {
+            position: absolute;
+            right: 150px;
+            width: 200px;
+            height: 120px;
+            border: 3px solid green;
+        } */
+        .end {
+            color: black;
+            margin-left: 100px;
+            padding: 10px;
+            width: 1020px;
+            height: 250px;
+            margin-top: 70px;
+            font-family: sans-serif;
+            font-size: 30px;
+
+        }
+
+        .btn {
+            font-family: arial;
+            margin: 0px 9px;
+            background-color: rgb(214, 30, 30);
+            color: white;
+            padding: 4px 36px;
+            /* border: 2px solid grey; */
+            /* border-radius: 10px; */
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(204, 176, 176);
+        }
+
+        /* footer {
+            background-color: black;
+            padding: ;
+
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content{
+            background-color: crimson;
+            max-width: 1170px;
+            margin: auto;
+        } */
+        body {
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .content {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            /* list-style: none; */
+        }
+
+        footer {
+            background-color: #000000;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+            /* margin-left: 478px; */
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        /* .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 2.0s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        } */
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive*/
+        /* @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        } */
+        h2 {
+            font-size: 30px;
+            color: #d45c5c;
+        }
+
+        .c {
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="—Pngtree—badges sport fitness athletic gym_7784036.png">
+        </div>
+        <div class="mid">
+            <!-- <h1>this is mid</h1> -->
+            <ul class="navbar">
+                <li><a href="web.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="trainers.html">Personal Trainers</a></li>
+                <li><a href="prices.html" class="active">Prices </a></li>
+                <li><a href="#">Schedule</a></li>
+            </ul>
+        </div>
+        <div class="heading">
+            <h1>PRICES AND PLANS</h1>
+        </div>
+        <div class="a">
+            <div class="b">
+                <!-- <img src="workout1.jpg"> -->
+            </div>
+            <div class="c">
+                <h2>BASIC WORKOUTS - 1500Rs</h2>
+                <ul>
+                    <li>2x workouts of your choice</li>
+                    <li>unlimited gym access</li>
+                    <li>personal workouts</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>UNLIMITED WORKOUTS - 3000Rs</h2>
+            <ul>
+                <li>unlimited group workouts of your choice</li>
+                <li>unlimited gym access</li>
+                <li>personal nutrition plans</li>
+            </ul>
+        </div>
+    </div>
+    <div class="end">
+
+        <h3 style="font-size: 50px;">ARE YOU READY FOR CHANGES?</h3>
+        <div class="getstart">
+            <a href="tutlogin.html"> <button class="btn" href="tutlogin.html" target="_blank">MAKE IT
+                    HAPPEN</button></a>
+        </div>
+    </div>
+    <footer>
+        <div class="content">
+            <div class="row">
+                <div class="footer-col">
+                    <h3>WORKING HOURS</h3>
+                    <p>Monday-Friday : 5:00AM - 10:00PM</p>
+                    <p>Saturday-Sunday : 5:00AM -12:00PM</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>LOCATE US</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

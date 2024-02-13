@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Trainer's</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: antiquewhite;
+        }
+
+
+        .container {
+            /* background-image: url(cardiogif.gif);
+            filter: brightness(50%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; */
+            background-color: black;
+            width: 100%;
+            height: 1700px;
+
+        }
+
+        .logo {
+            background-repeat: no-repeat;
+            margin-left: 50px;
+            display: inline-block;
+        }
+
+        .logo img {
+            width: 170px;
+            filter: invert(100%);
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: none;
+            /* background-color: #ffe6e6; */
+            border-radius: 30px;
+            /* color: grey; */
+            color: #d45c5c;
+
+        }
+
+        .mid {
+            display: block;
+            width: 780px;
+            margin: 120px auto;
+            margin-top: -119px;
+            font-family: arial;
+        }
+
+        .heading {
+            color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+            font-size: 30px;
+            margin-left: 100px;
+        }
+
+        .imag {
+
+            /* border: 10px solid green; */
+            /* width: 675px; */
+            height: 156px;
+            margin-left: 900px;
+            /* margin-right: 10px; */
+        }
+
+        .imag img {
+            height: 647px;
+        }
+
+        .text {
+            width: 630px;
+            margin-left: 100px;
+            color: white;
+        }
+
+        .text h4 {
+            font-size: 40px;
+            /* font-family: 'Anton', sans-serif; */
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .text p {
+            margin-top: 24px;
+            font-size: 20px;
+        }
+
+        .end {
+            color: black;
+            margin-left: 80px;
+            padding: 10px;
+            width: 1020px;
+            height: 250px;
+            margin-top: 60px;
+            font-family: sans-serif;
+            font-size: 30px;
+
+        }
+
+        .end2 {
+            margin-left: 700px;
+            margin-top: 60px;
+
+        }
+
+        .btn {
+            font-family: arial;
+            margin: 0px 9px;
+            background-color: rgb(214, 30, 30);
+            color: white;
+            padding: 4px 36px;
+            /* border: 2px solid grey; */
+            /* border-radius: 10px; */
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(204, 176, 176);
+        }
+
+        .imag2 {
+            height: 156px;
+            margin-left: 80px;
+        }
+
+        .imag2 img {
+            height: 650px;
+        }
+
+        .text2 {
+            width: 630px;
+            margin-left: 700px;
+            color: white;
+        }
+
+        .text2 h4 {
+            font-size: 40px;
+            /* font-family: 'Anton', sans-serif; */
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .text2 p {
+            margin-top: 24px;
+            font-size: 20px;
+        }
+
+        .quote {
+
+            color: black;
+            margin-left: 130px;
+            padding: 10px;
+            width: 1020px;
+            height: 250px;
+            margin-top: 343px;
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+
+        .quote h3 {
+            color: black;
+        }
+
+        .content {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* ul {
+            /* list-style: none; }*/
+        
+
+        footer {
+            background-color: #000000;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+            /* margin-left: 478px; */
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        /* .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 2.0s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        } */
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="—Pngtree—badges sport fitness athletic gym_7784036.png">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="web.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="trainers.html" class="active">Personal Trainers</a></li>
+                <li><a href="prices.html">Prices </a></li>
+                <li><a href="#">Schedule</a></li>
+            </ul>
+        </div>
+        <div class="heading">
+            <h1>TRAINER'S</h1>
+        </div>
+        <div class="trainer1">
+            <div class="imag">
+                <img src="trainer1.jpg">
+            </div>
+            <div class="text">
+                <h4>MATHEW HERON</h4>
+                <p>Mathew is the expert to talk to if your fitness goal is to lose weight or tone up. Working clients
+                    through high-intensity workouts and tailored fitness plans, Mat doesn’t take no for an answer when
+                    it comes to your goals.</p>
+
+
+                <p> With a background in sports psychology and physical therapy, Matt understands how the mind and body
+                    need to work together for you to achieve success.</p>
+            </div>
+            <div class="end">
+                <div class="getstart">
+                    <a href="tutlogin.html"> <button class="btn" href="tutlogin.html" target="_blank">SCHEDULE
+                            WORKOUT</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="trainer2">
+            <div class="imag2">
+                <img src="trainer2.jpg">
+            </div>
+            <div class="text2">
+                <h4>JOHN</h4>
+                <p>Whether you’re new to boxing or a seasoned fighter, John can teach you a thing or two about keeping
+                    fit for the ring and understanding your opponent. </p>
+                <p>While he comes from the world of professional boxing, John takes a holistic approach to fitness, and
+                    is just as likely to throw you into a yoga class as he is to throw you around the boxing ring.</p>
+            </div>
+            <div class="end2">
+                <div class="getstart">
+                    <a href="tutlogin.html"> <button class="btn" href="tutlogin.html" target="_blank">SCHEDULE
+                            WORKOUT</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="quote">
+            <h3>LET'S GO...!!!!</h3>
+            <a href="tutlogin.html"> <button class="btn" href="tutlogin.html" target="_blank">MAKE IT
+                    HAPPEN</button></a>
+        </div>
+        <footer>
+            <div class="content">
+                <div class="row">
+                    <div class="footer-col">
+                        <h3 style="font-family: arial;">WORKING HOURS</h3>
+
+                        <p style="margin-top: 25px;">Monday-Friday : 5:00AM - 10:00PM</p>
+                        <p>Saturday-Sunday : 5:00AM -12:00PM</p>
+                    </div>
+
+                    <div class="footer-col" style="margin-left: 478px;">
+                        <h3 style="font-family: arial;">LOCATE US</h3>
+                        <div class="social-links" style="margin-top: 25px;">
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </footer>
+
+
+</body>
+
+</html>

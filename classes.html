@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>classes</title>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* .body {} */
+
+        .container {
+            background-color: black;
+            height: 1360px;
+
+        }
+
+        .logo {
+            background-repeat: no-repeat;
+            margin-left: 50px;
+            display: inline-block;
+        }
+
+        .logo img {
+            width: 170px;
+            filter: invert(100%);
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: none;
+            /* background-color: #ffe6e6; */
+            border-radius: 30px;
+            /* color: grey; */
+            color: #d45c5c;
+
+        }
+
+        .mid {
+            display: block;
+            width: 780px;
+            margin: 120px auto;
+            margin-top: -119px;
+            font-family: arial;
+        }
+
+        .heading {
+            color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            margin-left: 100px;
+        }
+
+        .content1 img {
+            size-adjust: 100px;
+            width: 500px;
+            margin-left: 90px;
+            justify-content: center;
+        }
+
+        .content1 {
+            color: bisque;
+            /* justify-content: center; */
+            padding-left: 120px;
+            padding-right: 120px;
+            margin-top: 59px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+            /* padding: 20px; */
+        }
+
+        .content1 a {
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /*.content a:hover {
+            background-color: grey;
+        } */
+
+        .hover11 figure img {
+            opacity: 1;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .hover11 figure:hover img {
+            opacity: .5;
+        }
+
+        #r1 {
+            float: left;
+            text-align: center;
+        }
+
+        .r12 {
+            margin-top: 60px;
+        }
+
+        #r2 {
+            float: right;
+            text-align: center;
+        }
+
+        .r22 {
+            margin-top: 60px;
+        }
+
+        .end {
+            color: black;
+            margin-left: 100px;
+            padding: 10px;
+            width: 1020px;
+            height: 250px;
+            margin-top: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+
+        }
+
+        .end h1 {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 6s steps(30) infinite;
+            font-family: 'Anton', sans-serif;
+
+        }
+
+        .btn {
+            font-family: arial;
+            margin: 0px 9px;
+            background-color: rgb(214, 30, 30);
+            color: white;
+            padding: 4px 36px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(204, 176, 176);
+        }
+
+        body {
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        ul {
+            list-style: none;
+        }
+
+
+        .quote {
+            position: relative;
+        }
+
+        .quote::after {
+            position: relative;
+            right: 0;
+            width: 100%;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+
+            75% {
+                width: 100%;
+            }
+
+        }
+
+        .content {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            /* list-style: none; */
+        }
+
+        footer {
+            background-color: #000000;
+            padding: 70px 0;
+            color: white;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+            /* margin-left: 478px; */
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="—Pngtree—badges sport fitness athletic gym_7784036.png">
+        </div>
+        <div class="mid">
+            <!-- <h1>this is mid</h1> -->
+            <ul class="navbar">
+                <li><a href="web.html">Home</a></li>
+                <li><a href="classes.html" class="active">Classes</a></li>
+                <li><a href="trainers.html">Personal Trainers</a></li>
+                <li><a href="prices.html">Prices </a></li>
+                <li><a href="#">Schedule</a></li>
+            </ul>
+        </div>
+        <div class="heading">
+            <h1>CLASSES</h1>
+        </div>
+        <div class="content1">
+            <div class="hover11 column">
+                <div>
+                    <div id="r1">
+                        <figure><a href="#"><img src="lifting.jpg" /></a></figure>
+                        <span><a href="#">LIFTING</a></span>
+                        <div class="r12">
+
+                            <figure><a href="#"><img src="bodybuilding.jpg"></a></figure>
+                            <span><a href="#">BODYBUILDING</a> </span>
+                        </div>
+                    </div>
+                    <div id="r2">
+                        <figure><a href="cardio.html"><img src="cardio1.png"></a></figure>
+                        <span><a href="cardio.html">CARDIO</a></span>
+                        <div class="r22">
+                            <figure><a href="#"><img src="boxing.png"></a></figure>
+                            <span><a href="#">BOXING</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <h1>NO PAIN,NO GAIN...!!</h1>
+        <div class="getstart">
+            <a href="tutlogin.html"> <button class="btn" href="tutlogin.html" target="_blank">LET'S GO</button></a>
+        </div>
+    </div>
+    <footer>
+        <div class="content">
+            <div class="row">
+                <div class="footer-col">
+                    <h3 style="font-family: arial;">WORKING HOURS</h3>
+
+                    <p style="margin-top: 25px;">Monday-Friday : 5:00AM - 10:00PM</p>
+                    <p>Saturday-Sunday : 5:00AM -12:00PM</p>
+                </div>
+
+                <div class="footer-col" style="margin-left: 478px;">
+                    <h3 style="font-family: arial;">LOCATE US</h3>
+                    <div class="social-links" style="margin-top: 25px;">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
